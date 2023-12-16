@@ -10,6 +10,9 @@ import {DragDropModule} from "@angular/cdk/drag-drop";
 import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import{MatBadgeModule} from "@angular/material/badge";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,10 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
+    MatBadgeModule,
+    MatDatepickerModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

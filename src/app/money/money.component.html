@@ -1,1 +1,23 @@
-<p>money works!</p>
+<!--<mat-card-header>-->
+<!--  List of currencies-->
+<!--</mat-card-header>-->
+<!--<mat-card-content>-->
+<!--  <img mat-card-image [src]="src" width="100px" height="200px" />-->
+<!--</mat-card-content>-->
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)" >
+  <div class="example-box" cdkDrag > {{movie}}
+  <img [src]="src" alt="img" width="300px" height="70px">
+  </div>
+  <div class="example-box" cdkDrag > {{movie}}
+  <img [src]="src2" alt="img" width="300px" height="70px">
+  </div>
+  <div class="example-box" cdkDrag > {{movie}}
+  <img [src]="src3" alt="img" width="300px" height="70px">
+  </div>
+  <div class="example-box" cdkDrag > {{movie}}
+  <img [src]="src4" alt="img" width="300px" height="70px">
+  </div>
+  <div class="example-box" cdkDrag > {{movie}}
+  <img [src]="src5" alt="img" width="300px" height="70px">
+  </div>
+</div>
