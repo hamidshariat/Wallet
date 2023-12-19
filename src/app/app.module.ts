@@ -10,6 +10,7 @@ import {DragDropModule} from "@angular/cdk/drag-drop";
 import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     HeaderComponent,
     MoneyComponent,
     WalletComponent,
-    ReroutingComponent
+    ReroutingComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

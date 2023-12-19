@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./wallet.component.css']
 })
 export class WalletComponent {
+  protected readonly close = close;
+  isOpen: boolean = false;
 
+  onDragStart() {
+    this.isOpen = true;
+  }
 }
