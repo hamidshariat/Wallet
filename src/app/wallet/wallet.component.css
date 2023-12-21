@@ -1,7 +1,38 @@
 #OpenWallet{
- margin-left: 500px;
-  margin-right: 500px;
-  margin-top: 200px;
-  height:400px;
-  width:400px;
+  margin-left: 400px;
+  margin-top: -400px;
+  width: 800px;
+  height: 500px;
+
 }
+.cart-container
+{
+  display: inline-block;
+  width: auto;
+}
+
+#CloseWallet{
+  align-items: center;
+  align-content: center;
+    width: 400px;
+    height: 350px;
+    padding-left: 700px;
+    margin-top: -1300px;
+}
+.open-wallet-animation {
+  animation: openWalletAnimation 1.5s ease-out forwards;
+  display: none;
+}
+
+@keyframes openWalletAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+
