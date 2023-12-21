@@ -1,2 +1,34 @@
-<img id="CloseWallet" src="assets/Close-Wallet.png" width="300" height="200" alt="jj"  [style.display]="isOpen ? 'none' : 'block'" (dragstart)="onDragStart()" style="">
-<img  id="OpenWallet" src="assets/Open-Wallet.webp"  [style.display]="isOpen ? 'block' : 'none'">
+<mat-card class="cart-container">
+  <div class="Moneys">
+    <div><img id="DoToman" src="assets/DoToman.jpg"
+              width="200px" height="100px" alt="jj"
+              (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)"   style="">
+    </div>
+    <div>
+      <img id="PonsadToman" src="assets/Ponsad-Toman.jpg"
+           width="200px" height="100px" alt="jj"
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="">
+    </div>
+    <div>
+      <img id="PanjToman" src="assets/Panj_toman.jpg"
+           width="200px" height="100px" alt="jj"
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="">
+    </div>
+    <div>
+      <img id="PanjahToman" src="assets/Panjah_Toman.jpg"
+           width="200px" height="100px" alt="jj"
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="">
+    </div>
+    <div>
+      <img id="SadToman"  src="assets/Sad_Toman.jpg"
+           width="200px" height="100px" alt="jj"
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" >
+    </div>
+  </div>
+</mat-card>
+<img id="OpenWallet" class="open-wallet-animation" src="assets/Open-Wallet.webp"  [style.display]="isOpen ? 'block' : 'none'">
+
+  <img id="CloseWallet" src="assets/Close-Wallet.png"  width="200px" height="100px" alt="jj" (dragstart)="onDragStart($event)"
+                (dragover)="onDragOver($event)" (drop)=" onDrop($event)">
+
+
