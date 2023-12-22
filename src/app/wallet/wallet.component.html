@@ -1,34 +1,39 @@
 <mat-card class="cart-container">
-  <div class="Moneys">
+  <div class="Moneys" >
     <div><img id="DoToman" src="assets/DoToman.jpg"
               width="200px" height="100px" alt="jj"
-              (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)"   style="">
+              (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)"   style="" data-value="2000" >
     </div>
     <div>
       <img id="PonsadToman" src="assets/Ponsad-Toman.jpg"
            width="200px" height="100px" alt="jj"
-           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="">
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style=""  data-value="500">
     </div>
     <div>
       <img id="PanjToman" src="assets/Panj_toman.jpg"
            width="200px" height="100px" alt="jj"
-           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="">
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="" data-value="5000">
     </div>
     <div>
       <img id="PanjahToman" src="assets/Panjah_Toman.jpg"
            width="200px" height="100px" alt="jj"
-           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="">
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" style="" data-value="50000">
     </div>
     <div>
       <img id="SadToman"  src="assets/Sad_Toman.jpg"
            width="200px" height="100px" alt="jj"
-           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" >
+           (dragstart)="onDragStart($event)"  (dragover)="onDragOver($event)" (drop)=" onDrop($event)" data-value="100000" >
     </div>
+    <mat-card>
+      <div>Total : {{ totalValue }}</div>
+    </mat-card>
   </div>
 </mat-card>
 <img id="OpenWallet" class="open-wallet-animation" src="assets/Open-Wallet.webp"  [style.display]="isOpen ? 'block' : 'none'">
 
+
   <img id="CloseWallet" src="assets/Close-Wallet.png"  width="200px" height="100px" alt="jj" (dragstart)="onDragStart($event)"
                 (dragover)="onDragOver($event)" (drop)=" onDrop($event)">
+
 
 
