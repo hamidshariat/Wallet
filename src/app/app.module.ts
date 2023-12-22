@@ -10,6 +10,9 @@ import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatListModule} from '@angular/material/list';
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -26,6 +29,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatToolbarModule,
     MatIconModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatListModule,
+    MatButtonToggleModule,
+    MatMenuModule,
 
   ],
   providers: [],

@@ -26,11 +26,21 @@
     </div>
     <mat-card>
       <div>Total : {{ totalValue }}</div>
+      <button mat-button [matMenuTriggerFor]="menu">Withdrawal</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="Deductamount2000()">2000</button>
+        <button mat-menu-item (click)="Deductamount500()">500</button>
+        <button mat-menu-item (click)="Deductamount5000()">5000</button>
+        <button mat-menu-item (click)="Deductamount50000()">50000</button>
+        <button mat-menu-item (click)="Deductamount100000()">100000</button>
+      </mat-menu>
+
     </mat-card>
+
   </div>
 </mat-card>
-<img id="OpenWallet" class="open-wallet-animation" src="assets/Open-Wallet.webp"  [style.display]="isOpen ? 'block' : 'none'">
 
+<img id="OpenWallet" class="open-wallet-animation" src="assets/Open-Wallet.webp"  [style.display]="isOpen ? 'block' : 'none'">
 
   <img id="CloseWallet" src="assets/Close-Wallet.png"  width="200px" height="100px" alt="jj" (dragstart)="onDragStart($event)"
                 (dragover)="onDragOver($event)" (drop)=" onDrop($event)">

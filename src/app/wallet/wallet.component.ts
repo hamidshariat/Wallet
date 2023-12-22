@@ -27,8 +27,8 @@ export class WalletComponent {
     if (draggedImageValue > 0 && targetImageId == 'CloseWallet') {
       this.totalValue += draggedImageValue;
       this.isOpen = true;
-
     }
+
     setTimeout(() => {
       this.isOpen = false;
       // Update the UI or display the total value somewhere
@@ -38,4 +38,30 @@ export class WalletComponent {
   }
 
 
+  Deductamount2000() {
+    this.totalValue = this.totalValue -2000
+  }
+
+  Deductamount500() {
+    this.totalValue=this.totalValue-500
+  }
+
+  Deductamount5000() {
+    this.totalValue=this.totalValue-5000
+
+  }
+
+  Deductamount50000() {
+    this.totalValue=this.totalValue-50000
+
+  }
+
+  Deductamount100000() {
+    this.totalValue=this.totalValue-100000
+
+  }
 }
+function Deductamount2000() {
+    throw new Error('Function not implemented.');
+}
+
