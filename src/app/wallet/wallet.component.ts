@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-wallet',
-  templateUrl: './wallet.component.html',
+  templateUrl: 'wallet.component.html',
   styleUrls: ['./wallet.component.css']
 })
 export class WalletComponent {
@@ -31,37 +31,48 @@ export class WalletComponent {
 
     setTimeout(() => {
       this.isOpen = false;
-      // Update the UI or display the total value somewhere
       console.log("Total Value:", this.totalValue);
     }, 1500);
 
   }
 
-
   Deductamount2000() {
+     if (this.totalValue <=0 ){
+       alert("Insufficient inventory")
+       return;
+     }
     this.totalValue = this.totalValue -2000
   }
 
   Deductamount500() {
-    this.totalValue=this.totalValue-500
+    if (this.totalValue <=0 ){
+      alert("Insufficient inventory")
+      return;
+    }
+     this.totalValue=this.totalValue-500
   }
 
   Deductamount5000() {
-    this.totalValue=this.totalValue-5000
-
+    if (this.totalValue <=0 ){
+      alert("Insufficient inventory")
+      return;
+    }
+     this.totalValue=this.totalValue-5000
   }
 
   Deductamount50000() {
-    this.totalValue=this.totalValue-50000
-
+    if (this.totalValue <=0 ){
+      alert("Insufficient inventory")
+      return;
+    }
+     this.totalValue=this.totalValue-50000
   }
 
   Deductamount100000() {
-    this.totalValue=this.totalValue-100000
-
+    if (this.totalValue <=0 ){
+      alert("Insufficient inventory")
+      return;
+    }
+     this.totalValue=this.totalValue-100000
   }
 }
-function Deductamount2000() {
-    throw new Error('Function not implemented.');
-}
-
